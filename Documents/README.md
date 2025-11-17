@@ -1,14 +1,19 @@
-# NUCLEO-F030R8 Nucleo-64 board
+# NUCLEO-G031K8 Nucleo-32 board
 
 ## Overview
 
-The STM32 Nucleo-64 board provides an affordable and flexible way for users to try out new concepts and build prototypes by choosing from the various combinations of performance and power consumption features, provided by the STM32 microcontroller. For the compatible boards, the internal or external SMPS significantly reduces power consumption in Run mode. The ARDUINO® Uno V3 connectivity support and the ST morpho headers allow the easy expansion of the functionality of the STM32 Nucleo open development platform with a wide choice of specialized shields.
+The STM32 Nucleo-32 board provides an affordable and flexible way for users to try out new concepts and build
+prototypes by choosing from the various combinations of performance and power consumption features, provided by the
+STM32 microcontroller.
 
-The STM32 Nucleo-64 board does not require any separate probe as it integrates the ST-LINK/V2-1 debugger/programmer.
+The Arduino™ Nano V3 connectivity support allows the easy expansion of the functionality of the STM32 Nucleo open
+development platform with a wide choice of specialized shields.
+
+The STM32 Nucleo-32 board does not require any separate probe as it integrates the ST-LINK debugger/programmer.
 
 ## Getting started
 
-- [User manual](https://www.st.com/resource/en/user_manual/um1724-stm32-nucleo64-boards-mb1136-stmicroelectronics.pdf)
+- [User manual](https://www.st.com/resource/en/user_manual/um2591-stm32g0-nucleo32-board-mb1455-stmicroelectronics.pdf)
 
 ### ST-LINK driver installation and firmware upgrade (on Microsoft Windows)
 
@@ -23,8 +28,8 @@ The STM32 Nucleo-64 board does not require any separate probe as it integrates t
 
 ## Technical reference
 
-- [STM32F030R8 microcontroller](https://www.st.com/en/microcontrollers-microprocessors/stm32f030r8.html)
-- [NUCLEO-F030R8 board](https://www.st.com/en/evaluation-tools/nucleo-f030r8.html)
-- [User manual](https://www.st.com/resource/en/user_manual/um1724-stm32-nucleo64-boards-mb1136-stmicroelectronics.pdf)
-- [Data brief](https://www.st.com/resource/en/data_brief/nucleo-f030r8.pdf)
-- [Schematic](https://www.st.com/resource/en/schematic_pack/mb1136-default-c03_schematic.pdf)
+- [STM32G031K8 microcontroller](https://www.st.com/en/microcontrollers-microprocessors/stm32G031K8.html)
+- [NUCLEO-G031K8 board](https://www.st.com/en/evaluation-tools/nucleo-G031K8.html)
+- [User manual](https://www.st.com/resource/en/user_manual/um2591-stm32g0-nucleo32-board-mb1455-stmicroelectronics.pdf)
+- [Data brief](https://www.st.com/resource/en/data_brief/nucleo-G031K8.pdf)
+- [Schematic](https://www.st.com/resource/en/schematic_pack/mb1455-g031k8-c01_schematic.pdf)

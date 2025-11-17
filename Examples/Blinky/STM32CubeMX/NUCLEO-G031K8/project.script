@@ -1,0 +1,5 @@
+loadboard NUCLEO-G031K8 allmodes
+project name STM32CubeMX
+project toolchain "MDK-ARM V5"
+project path "/Users/chrsei01/03_work/02_Projects/ST/Nucleo-G031K8/Blinky/STM32CubeMX/NUCLEO-G031K8"
+SetCopyLibrary "copy only"

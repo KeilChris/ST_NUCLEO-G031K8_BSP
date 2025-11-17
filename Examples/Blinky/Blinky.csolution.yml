@@ -1,15 +1,17 @@
 # A solution is a collection of related projects that share same base configuration.
 solution:
-  created-for: CMSIS-Toolbox@2.9.0
+  description: A simple Blinky example for STM32G0 using CMSIS-RTOS2 and CMSIS-Driver.
+  created-for: CMSIS-Toolbox@2.12.0
   cdefault:
 
   # List of tested compilers that can be selected
   select-compiler:
     - compiler: AC6
+  compiler: AC6
 
   # Miscellaneous toolchain controls directly passed to the tools
   misc:
-    - for-compiler: AC6      # change to -gdwarf-4 for debugging using uVision
+    - for-compiler: AC6 # change to -gdwarf-4 for debugging using uVision
       C-CPP:
         - -gdwarf-5
       ASM:
@@ -17,8 +19,8 @@ solution:
 
   # List the packs that define the device and/or board.
   packs:
-    - pack: Keil::STM32F0xx_DFP@^3.0.0-0
-    - pack: Keil::NUCLEO-F030R8_BSP@^1.0.0-0
+    - pack: Keil::STM32G0xx_DFP@^2.1.0-0
+    - pack: Keil::NUCLEO-G031K8_BSP@^1.0.0-0
     - pack: ARM::CMSIS-Driver_STM32@^1.2.0-0
     - pack: ARM::CMSIS@^6.0.0
     - pack: ARM::CMSIS-RTX@^5.9.0
@@ -26,9 +28,18 @@ solution:
 
   # List different hardware targets that are used to deploy the solution.
   target-types:
-    - type: NUCLEO-F030R8
-      board: STMicroelectronics::NUCLEO-F030R8
-      device: STMicroelectronics::STM32F030R8Tx
+    - type: NUCLEO-G031K8
+      board: STMicroelectronics::NUCLEO-G031K8
+      device: STMicroelectronics::STM32G031K8Tx
+      target-set:
+        - set:
+          images:
+            - project-context: Blinky.Debug
+          debugger:
+            name: ST-Link@pyOCD
+            port: 3333
+            protocol: swd
+            clock: 4000000
 
   # List of different build configurations.
   build-types:

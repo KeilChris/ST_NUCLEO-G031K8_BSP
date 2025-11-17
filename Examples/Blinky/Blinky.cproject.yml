@@ -38,8 +38,8 @@ project:
             - RETARGET_STDIO_UART: 2
 
   linker:
-    - script:  ./RTE/Device/STM32F030R8Tx/ac6_linker_script.sct.src
-      regions: ./RTE/Device/STM32F030R8Tx/regions_NUCLEO-F030R8.h
+    - script:  ./RTE/Device/STM32G031K8Tx/ac6_linker_script.sct.src
+      regions: ./RTE/Device/STM32G031K8Tx/regions_NUCLEO-G031K8.h
       for-compiler: AC6
 
   # List executable file formats to be generated.
